@@ -90,7 +90,7 @@ module.exports = class MdsMdSetting
     'height': MdsMdSetting.generalTransfomer.unit
     'theme': (v) ->
       basename = path.basename(v)
-      if basename in ['default', 'gaia'] then "css/themes/#{basename}.css" else null
+      if basename in ['default', 'gaia', 'tngg'] then "css/themes/#{basename}.css" else null
     'template': (v) -> v
     'footer': (v) -> v
     'prerender': MdsMdSetting.generalTransfomer.bool
